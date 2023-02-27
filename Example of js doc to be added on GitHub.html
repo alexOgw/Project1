@@ -1,0 +1,94 @@
+<script>
+
+
+let masini = ["Audi", "Renault", "Skoda"];
+let numerePare = [2,4,6,8];
+
+console.log(masini[2]);
+console.log(numerePare[3]);
+//se va afisa lista in Console
+
+let laptop = []
+laptop[3] = "HP";
+
+
+console.log(laptop);
+//se va afisa valoarea variabile de mai sus, dar 0,1 si 2 vor fi nedefinite!
+
+
+
+//exercitiu
+let life = ["What is the meaning of life?", 42, true] 
+
+console.log(life[0]);
+console.log(life[1]);
+console.log(life[2]);
+
+
+// PUSH si POP
+
+let animale = ["tigru", "leu"];
+animale.push("leopard");
+
+console.log(animale);
+
+
+console.log(animale.pop(2));
+console.log(animale);
+
+
+// SHIFTING si Unshifting
+
+let monitoareAudio = ["AdamAudio", "KRK", "Yamaha"];
+monitoareAudio.unshift("Behringer"); //ce valoare imi adaug in array la inceput
+console.log(monitoareAudio); //afisare array cu valoarea adaugata
+
+console.log(monitoareAudio.shift(0)); //afisare in Console a elementului care va fi scos, adica Behringer
+console.log(monitoareAudio); //afisare in Console a array-ului fara primul element
+
+
+
+// SPLICING
+
+let mouse = ["Logitech", "HP", "Razor", "Spacer", "SteelSeries"];
+plice = mouse.splice(3,2); //3 inseamna al treilea element din array (Spacer), unde 2 reprezinta cate elemente for fi scoase incepand cu 3!
+
+console.log(mouse);
+
+
+
+// OPERATORS
+
+let nume = "Mihai";
+//concatenarea numelui Mihai
+console.log("Numele meu este " + nume);
+console.log(nume + " are varsta de " + 42);
+console.log(42 + " este varsta lui " + nume);
+
+let numar = 4;
+
+console.log(numar + 1); //rezultatul este 4
+console.log(numar + "1"); //rezultatul este 41 (concateneaza deoarece este ultimul este string)
+console.log("1" + numar + numar); //rezultatul este 144 (fiind primul string, restul vor fi la fel)
+
+
+let numarNou = 3;
+console.log(14 % numarNou); //resultatul este 2, adica restul impartirii unde 14 este scazut din cel mai mare numar apropiat de el (3*4=12=>14-12=2!)
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+</script>
